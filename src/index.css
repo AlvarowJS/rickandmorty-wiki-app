@@ -1,0 +1,124 @@
+:root {
+  --primary-color: #4e3239;
+  --secondary-color: #9f3cc2;
+  --white-color: #dfe1e5;
+  --font-type: font-family: 'Dancing Script', cursive;
+}
+
+body {
+  margin: 0;
+  background-color: #743d55;
+  font-family: var(--font-type);
+}
+ul{
+  list-style: none;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.app__header {
+  /* background-image: url('https://cdn.wallpapersafari.com/99/94/RG1K60.png'); */
+  background-image: url('https://wallpapercave.com/wp/wp4608055.jpg');
+  /* background-image: url('https://mcdn.wallpapersafari.com/medium/48/60/uBfYe0.png'); */
+
+
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  width: 100%;
+  height: 300px;
+
+}
+
+.app__search {
+  margin: 20px 50px;
+
+}
+
+.app__search input {
+  width: 225px;
+  border-radius: 100px;
+  border: 1px solid var(--white-color);
+  padding: 5px 30px;
+  outline: none;
+
+}
+
+.app__search input:hover {
+  /* hover para cuando pase el mouse hacer una accion*/
+  box-shadow: 0 1px 6px 0 var(--secondary-color);
+  border-color: var(--primary-color);
+}
+
+.app__search button {
+  border: none;
+  background-color: transparent;
+  font-size: 25px;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  color: var(--white-color);
+  cursor: pointer;
+}
+.characters{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+.app__character {
+  display: flex;
+  gap: 20px;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  padding: 10px;
+  color: var(--white-color);
+  
+}
+.app__character--img img{
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+}
+.app__character--dates {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  
+}
+.app__location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.app__location ul{
+  display: flex;
+  text-align: center;
+  gap: 30px;
+  font-size: 20px
+ 
+}
+.pagination {
+  display: flex;
+  gap: 80px;
+}
+.pagination button{
+  margin: 10px;
+  border-radius: 10px;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+  color: var(--white-color);
+  background-color: #743d55;
+}
+.pagination button:hover{
+  box-shadow: 0 1px 6px 0 var(--secondary-color);
+  border-color: var(--secondary-color);
+}
